@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VikramSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="vikramnewproject.testcases.Login">
+        <methods>
+          <include name="verifyLoginWithInvalidemailValidPassCredentials"/>
+          <include name="verifyLoginWithInvalidpassinvalidemailCredentials"/>
+          <include name="verifyLoginWithInvalidpassvalidemailCredentials"/>
+          <include name="verifyLoginCredentials"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- vikramnewproject.testcases.Login -->
+      <class name="vikramnewproject.testcases.Register">
+        <methods>
+          <include name="verifyRegisterAnAccountwithEmptyFields"/>
+          <include name="verifyRegisterAnAccountwithSubscribeMandatoryFields"/>
+          <include name="verifyRegisterAnAccountwithMandatoryFields"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- vikramnewproject.testcases.Register -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [VikramSuite] -->
